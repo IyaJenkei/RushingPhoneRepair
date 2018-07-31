@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title></title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="custom.css" />
+	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" />
+</head>
+<body class="container-fluid">
+
+	<ul class="nav nav-pills">
+		<li role="presentation" class="active"><a href="/index.html">Home</a></li>
+		<li role="presentation"><a href="/services.html">Example's</a></li>
+		<li role="presentation"><a href="/queue.html">Services</a></li>
+		<li role="presentation"><a href="/account.html">Account</a></li>
+	</ul>
+	<div class="row">
+		<div class="col-md-2 col-md-offset-5">
+			<form role="form">
+				<div class="form-group">
+					<label for="date-ordered">Date</label>
+					<input id="date-picker" type="date" value="" />
+				</div>
+				<div class="form-group">
+					<label for="model">Model</label>
+					<select id="phone-model">
+						<option value="6">6</option>
+						<option value="6S">6S</option>
+						<option value="6 Plus">6 Plus</option>
+						<option value="6S Plus">6S Plus</option>
+						<option value="7">7</option>
+						<option value="7 Plus">7 Plus</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="screen-color">Screen Color</label>
+					<select id="screen-color">
+						<option value="Black">Black</option>
+						<option value="White">White</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="service">Service</label>
+					<select id="service-type">
+						<option value="Screen Replacement">Screen Replacement</option>
+						<option value="Battery Replacement">Battery Replacement</option>
+						<option value="Speaker">Speaker</option>
+						<option value="Speakerphone">Speakerphone</option>
+						<option value="Wifi">Wifi</option>
+						<option value="Charge Port">Charge Port</option>
+						<option value="Other">Other</option>
+					</select>
+				</div>
+				<div class="form-group">
+					<label for="additional-comments">Comments</label>
+					<textarea id="comment-block"></textarea>
+				</div>
+				<button id="service-submit" type="submit" class="btn btn-default col-md-12">Register</button>
+			</form>
+		</div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="index.js"></script>
+	
+</body>
+</html>
